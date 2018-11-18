@@ -74,12 +74,13 @@ public class TestPersonWarehouse {
         }
 
         Iterator<Map.Entry<Long, String>> it = localNameMap.entrySet().iterator();
+        System.out.println(it.hasNext());
         while (it.hasNext()) {
             Map.Entry<Long, String> pair = it.next();
             long pairKey = pair.getKey();
             String pairValue = pair.getValue();
             String mapValue = warehouseNameMap.get(pairKey);
-
+            System.out.println(pairValue);
             Assert.assertTrue(mapValue.equals(pairValue));
         }
     }

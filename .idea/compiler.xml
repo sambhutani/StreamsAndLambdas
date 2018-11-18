@@ -9,8 +9,5 @@
         <module name="looptest" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8">
-      <module name="looptest" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
